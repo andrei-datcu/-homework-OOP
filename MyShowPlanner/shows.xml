@@ -1,0 +1,54 @@
+<structures.ShowSet serialization="custom">
+  <unserializable-parents/>
+  <sorted-set>
+    <default/>
+    <structures.ShowSet_-1/>
+    <int>6</int>
+    <structures.Show>
+      <showId>30715</showId>
+      <name>Arrow</name>
+      <country>US</country>
+      <status>New Series</status>
+      <watchedEpisodes/>
+    </structures.Show>
+    <structures.Show>
+      <showId>23561</showId>
+      <name>Boardwalk Empire</name>
+      <country>US</country>
+      <status>Returning Series</status>
+      <watchedEpisodes>
+        <int>1</int>
+        <int>2</int>
+        <int>3</int>
+      </watchedEpisodes>
+    </structures.Show>
+    <structures.Show>
+      <showId>18164</showId>
+      <name>Breaking Bad</name>
+      <country>US</country>
+      <status>Final Season</status>
+      <watchedEpisodes/>
+    </structures.Show>
+    <structures.Show>
+      <showId>7926</showId>
+      <name>Dexter</name>
+      <country>US</country>
+      <status>Returning Series</status>
+      <watchedEpisodes/>
+    </structures.Show>
+    <structures.Show>
+      <showId>4284</showId>
+      <name>Lost</name>
+      <country>US</country>
+      <status>Canceled/Ended</status>
+      <watchedEpisodes/>
+    </structures.Show>
+    <structures.Show>
+      <showId>6753</showId>
+      <name>Top Gear</name>
+      <country>UK</country>
+      <status>Returning Series</status>
+      <watchedEpisodes/>
+    </structures.Show>
+  </sorted-set>
+</structures.ShowSet>

@@ -1,0 +1,171 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.6.0_24" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridBagLayout ) {
+			"$columnSpecs": "left:0:1.0"
+			"$rowSpecs": "0, 0, 0"
+			"$alignTop": true
+			"$alignLeft": true
+			"$vGap": 10
+		} ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 500, 500 )
+			"$locationPolicy": 1
+			"$sizePolicy": 0
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "titleLabel"
+				"text": "My Library"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"hAlign": 0
+				"ipady": 40
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+				"$columnSpecs": "0"
+				"$rowSpecs": "0, 0"
+				"$hGap": 5
+				"$vGap": 5
+				"$alignLeft": true
+				"$alignTop": true
+			} ) {
+				name: "newLibraryPanel"
+				"border": new javax.swing.border.TitledBorder( "Biblioteca" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Nu exista nicio biblioteca. Va rugam sa creati una!"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"ipady": 10
+					"insets": new java.awt.Insets( 0, 20, 0, 0 )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "Biblioteca noua"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 1
+					"hAlign": 2
+					"insets": new java.awt.Insets( 0, 20, 0, 0 )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 1
+				"weightx": 1.0
+				"hAlign": 0
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+				"$columnSpecs": "0, 0"
+				"$rowSpecs": "0, 0"
+				"$hGap": 15
+				"$vGap": 15
+				"$alignLeft": true
+				"$alignTop": true
+			} ) {
+				name: "booksPanel"
+				"border": new javax.swing.border.TitledBorder( "Carti" )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0"
+					"$rowSpecs": "0, 0"
+					"$hGap": 10
+					"$vGap": 10
+					"$alignLeft": true
+					"$alignTop": true
+				} ) {
+					name: "maxChapterPanel"
+					"border": new javax.swing.border.TitledBorder( null, "Cea mai mare carte", 1, 2 )
+					"minimumSize": new java.awt.Dimension( 150, 72 )
+					"preferredSize": new java.awt.Dimension( 170, 72 )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField1"
+						"text": "alabalalprotocala"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"insets": new java.awt.Insets( 0, 5, 0, 0 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "text"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 1
+						"insets": new java.awt.Insets( 0, 5, 0, 0 )
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"weightx": 0.3
+					"weighty": 0.2
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "maxParagraphScrollPane"
+					"viewportBorder": new javax.swing.border.TitledBorder( "Cel mai lung paragraf" )
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "textArea1"
+						"preferredSize": new java.awt.Dimension( 170, 20 )
+						"maximumSize": new java.awt.Dimension( 300, 300 )
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+					"weightx": 0.7
+					"weighty": 0.2
+					"hAlign": 5
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "Carte noua"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 1
+					"hAlign": 0
+					"vAlign": 0
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0, 0"
+					"$rowSpecs": "0, 0"
+					"$hGap": 10
+					"$vGap": 10
+					"$alignLeft": true
+					"$alignTop": true
+				} ) {
+					name: "editBookPanel"
+					"border": new javax.swing.border.TitledBorder( "Editeaza carte" )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JList" ) {
+							name: "list1"
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"hAlign": 5
+						"vAlign": 5
+						"gridwidth": 2
+						"weightx": 1.0
+						"weighty": 1.0
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button3"
+						"text": "Editeaza"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 1
+						"hAlign": 0
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button4"
+						"text": "Sterge"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 1
+						"gridy": 1
+						"hAlign": 2
+						"vAlign": 0
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+					"gridy": 1
+					"weighty": 0.8
+					"vAlign": 5
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 2
+				"weightx": 1.0
+				"hAlign": 5
+				"vAlign": 5
+				"weighty": 1.0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 655, 450 )
+		} )
+	}
+}

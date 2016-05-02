@@ -1,0 +1,82 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.6.0_24" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.GridBagLayout ) {
+			"$columnSpecs": "0, 0"
+			"$rowSpecs": "0, 0, 0, 0"
+			"$hGap": 10
+			"$vGap": 15
+			"$alignLeft": true
+			"$alignTop": true
+		} ) {
+			name: "this"
+			"modal": true
+			"resizable": false
+			"title": "Adauga o carte noua..."
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "nameLabel"
+				"text": "Nume:"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"insets": new java.awt.Insets( 20, 10, 0, 0 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "nameText"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 1
+				"vAlign": 3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "authorLabel"
+				"text": "Autor:"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 1
+				"insets": new java.awt.Insets( 0, 10, 0, 0 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "authorText"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 1
+				"gridy": 1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "ISBNLabel"
+				"text": "ISBN:"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 2
+				"insets": new java.awt.Insets( 0, 10, 0, 0 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "ISBNText"
+				"columns": 30
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 1
+				"gridy": 2
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) {
+				"hgap": 20
+				"vgap": 10
+			} ) {
+				name: "buttonsPanel"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "okButton"
+					"text": "OK"
+					"preferredSize": new java.awt.Dimension( 65, 22 )
+					"maximumSize": new java.awt.Dimension( 65, 22 )
+					"minimumSize": new java.awt.Dimension( 65, 22 )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "cancelButton"
+					"text": "Renunta"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 3
+				"gridwidth": 2
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 425, 240 )
+		} )
+	}
+}

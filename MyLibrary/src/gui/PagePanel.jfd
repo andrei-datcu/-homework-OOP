@@ -1,0 +1,75 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.6.0_24" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+			"$columnSpecs": "0"
+			"$rowSpecs": "0, 0, 0, 0"
+			"$hGap": 10
+			"$vGap": 10
+			"$alignLeft": true
+			"$alignTop": true
+		} ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 567, 800 )
+			"maximumSize": new java.awt.Dimension( 567, 800 )
+			"preferredSize": new java.awt.Dimension( 567, 800 )
+			"background": new java.awt.Color( 255, 255, 255, 255 )
+			"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+				"$columnSpecs": "0"
+				"$rowSpecs": "0"
+				"$hGap": 10
+				"$vGap": 10
+				"$alignTop": true
+				"$alignLeft": true
+			} ) {
+				name: "headerPanel"
+				"border": new javax.swing.border.MatteBorder( 0, 0, 1, 0, sfield java.awt.Color black )
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Antet antet antet antet"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"weightx": 1.0
+					"hAlign": 2
+					"vAlign": 1
+					"insets": new java.awt.Insets( 20, 20, 10, 0 )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"weightx": 1.0
+				"insets": new java.awt.Insets( 0, 40, 0, 40 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "titleLabel"
+				"text": "Titlu"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 1
+				"hAlign": 0
+				"ipady": 60
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "textPanel"
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 2
+				"weighty": 1.0
+				"insets": new java.awt.Insets( 0, 40, 0, 40 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "footerPanel"
+				"text": "1"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 3
+				"insets": new java.awt.Insets( 20, 40, 0, 40 )
+				"hAlign": 4
+				"vAlign": 0
+				"ipady": 15
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

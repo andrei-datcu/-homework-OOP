@@ -1,0 +1,55 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.6.0_24" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+			"$columnSpecs": "0"
+			"$rowSpecs": "0, 0"
+			"$hGap": 15
+			"$vGap": 5
+			"$alignLeft": true
+			"$alignTop": true
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) {
+				"alignment": 0
+			} ) {
+				name: "toolBoxPanel"
+				add( new FormComponent( "gui.FontChooserComboBox" ) {
+					name: "fontChooserComboBox1"
+					"selectedIndex": 9
+				} )
+				add( new FormComponent( "javax.swing.JSpinner" ) {
+					name: "fontSizeSpinner"
+					"model": new javax.swing.SpinnerNumberModel( 12, 5, 36, 1 )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "searchButton"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "/home/andrei/Documents/lucru/poo/tema2/MyLibrary/src/icons/Find Search_32.png" )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"weightx": 1.0
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "pagesScrollPane"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0:1.0"
+					"$rowSpecs": "0:1.0"
+					"$alignTop": true
+					"$alignLeft": true
+				} ) {
+					name: "pagesPanel"
+					"background": new java.awt.Color( 153, 153, 153, 255 )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 1
+				"weightx": 1.0
+				"weighty": 1.0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

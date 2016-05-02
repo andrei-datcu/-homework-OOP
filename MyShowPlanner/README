@@ -1,0 +1,33 @@
+Sistem de operare pe care am implementat:
+  Linux Mint 13 , kernel version: 3.2.0-32-generic
+  
+IDE folosit: Eclipse Juno
+
+  Nota: Eclipse ruleaza executabilul din folderul proiectului
+  si NU din bin
+ 
+Ore de lucru: ~10h
+
+Librari si cod Extern folosit
+
+  xstream: format .jar se afla in folderul xstream
+  LinkLabel : format .java
+  EpisodeTreeCellRenderer, EpisodeTreeNodeRenderer: format.java, adaptat de mine, insa codul are ca sursa o carte
+  
+Ce contine:
+  pachetul Structures:
+    clase tip structura, pentru a memora showuri, episoade etc.
+    in principiu apelez un *XmlParser din pachetul urlreaders care imi intoarce un show
+    
+  pachetul gui
+    interfata grafica
+    
+  pachetul urlreaders
+    clase cu metode statice pentru a citi si parsa diferite tipuri de xml in functie de ce caut(searchresult, showinfo)
+    
+Ce si cum salvez:
+  salvez prin intermediul clasei xstream un TreeSet de showuri(ShowSet)
+  la un show salvez doar cele 4 cerinte de punctul 1 + un set cu numarul general al episoadelor vizionate
+  la fiecare repopulare a tabelului incerc sa aflu urmatorul episod, daca exista
+  prin intermediul tabelului custom marchez/demarchez vizionarea anumitor episoade
+  salvarea lor se face prin salvarea show set-ului la inchiderea dialogului de informatii

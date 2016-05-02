@@ -1,0 +1,48 @@
+Sistem de operare pe care am implementat:
+  Linux Mint 13 , kernel version: 3.2.0-32-generic
+  
+IDE folosit: Eclipse Juno
+
+  Nota: Eclipse ruleaza executabilul din folderul proiectului
+  si NU din bin
+ 
+Ore de lucru: ~100h
+
+Librarii externe folosite:
+
+  -xstream:
+    binar, sub forma de .jar, se gaseste in src/xstream si este folosita
+    pentru serializarea clasei de tip Library
+   
+   -FontChooserComboBox:
+    .java, codul nu imi apartine, se afla pachetul gui, numele ii spune functionalitatea
+    
+   -ImagePreview:
+    .java, este o extindere a JFileChooser, preluata de pe java tutorials. Se afla in pachetul
+     gui.components. Toate cele 3 fisiere de acolo reprezinta ImagePreview si sunt preluate de
+     pe java tutorials
+     
+Pe langa functionalitatiile din enunt, am implementat urmatoarele bonusuri:
+
+  In AuthorMode:
+    - posibilitatea de adaugarea/stergerea interactiva a capitolelor
+    - se pot adauga imagini de maxim 500x500px(atentie o imagine = un paragraf;
+    daca se alege Adauga o imagine pe un paragraf deja completat, continutul acestuia
+    va fi golit!!)
+    
+  In PublishMode:
+    - afisarea sub forma de pagini cu antet si subsol + imagini
+    - cautarea de expresii regulate, afisarea numarului de rezultate, previous si next pentru
+      scrollpaginilor astfel incat sa se afiseze rezultatele
+    - JList tip curpins, care la select muta pagina la inceputul capitolului selectat
+    
+  Altele:
+  
+    - buton de stergere pentru carte
+    - Orice modificare adusa asupra cartii este pastrata prin intermediul serializarii in
+    library.xml
+    
+Sugestii:
+
+  foarte buna ideea, insa ar fi trebuit sa va opriti la Paragraph. Sentence este absolut nefolositor
+  si m-a incurcat in rezolvare
